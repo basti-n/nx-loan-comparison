@@ -1,0 +1,6 @@
+<ui-header></ui-header>
+<main>
+  <ul>
+    <li *ngFor="let bank of banks$ | async">{{ bank.name }}</li>
+  </ul>
+</main>

@@ -1,0 +1,52 @@
+{
+  "npmScope": "loan-comparison",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "loan-comparison": {
+      "tags": []
+    },
+    "loan-comparison-e2e": {
+      "tags": [],
+      "implicitDependencies": ["loan-comparison"]
+    },
+    "api": {
+      "tags": []
+    },
+    "request-track": {
+      "tags": []
+    },
+    "request-track-e2e": {
+      "tags": [],
+      "implicitDependencies": ["request-track"]
+    },
+    "models": {
+      "tags": []
+    },
+    "ui": {
+      "tags": []
+    },
+    "icons": {
+      "tags": []
+    }
+  }
+}
