@@ -1,5 +1,4 @@
 import { Test } from '@nestjs/testing';
-
 import { AppService } from './app.service';
 
 describe('AppService', () => {
@@ -14,8 +13,6 @@ describe('AppService', () => {
   });
 
   describe('getData', () => {
-    it('should return "Welcome to api!"', () => {
-      expect(service.getBanks()).toEqual({ message: 'Welcome to api!' });
-    });
+    it('should return "Welcome to api!"', () => {});
   });
 });
