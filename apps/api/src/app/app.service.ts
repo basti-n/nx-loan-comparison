@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Bank } from '@loan-comparison/models';
+import { Bank } from '@models';
 
 @Injectable()
 export class AppService {

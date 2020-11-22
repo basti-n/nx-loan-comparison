@@ -1,0 +1,7 @@
+<form [formGroup]="calculatorForm" (ngSubmit)="calculate()">
+  <loan-comparison-calculator-input
+    label="Kreditsumme"
+    formControlName="amount"
+  ></loan-comparison-calculator-input>
+  <button>Submit</button>
+</form>

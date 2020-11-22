@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
-import { Bank } from '@loan-comparison/models'
+import { Bank } from '@models'
 
 @Controller()
 export class AppController {
