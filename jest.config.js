@@ -1,9 +1,10 @@
 module.exports = {
-  testMatch: ['**/+(*.)+(spec|test).+(ts|js)?(x)'],
-  transform: {
-    '^.+\\.(ts|js|html)$': 'ts-jest',
-  },
-  resolver: '@nrwl/jest/plugins/resolver',
-  moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageReporters: ['html'],
+  projects: [
+    '<rootDir>/apps/loan-comparison',
+    '<rootDir>/apps/api',
+    '<rootDir>/apps/request-track',
+    '<rootDir>/libs/models',
+    '<rootDir>/libs/ui',
+    '<rootDir>/libs/icons',
+  ],
 };
